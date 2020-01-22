@@ -23,6 +23,8 @@
 #define S2          PORTCbits.RC2
 #define S3          PORTCbits.RC3
 
+void CAN2_Transmit_Test(void);
+
 int main ( void )
 {
     LED1_DIR = 0;
@@ -37,18 +39,38 @@ int main ( void )
     
     /* Initialize all modules */
     SYS_Initialize ( NULL );
-    printf("Hello World\r\n");
+    printf("\r\nPIC32MX795F CAN Example\r\n");
 
     while ( true )
     {
-        LED1 = S1;
-        LED2 = S2;
-        LED3 = S3;
-
+        if (!S1) {
+            LED1 = 1;
+            CAN2_Transmit_Test();
+            while (!S1);
+            LED1 = 0;
+        }  
+        
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
     }
 
     /* Execution should not come here during normal operation */
     return ( EXIT_FAILURE );
+}
+
+void CAN2_Transmit_Test(void)
+{
+    uint8_t     i;
+    uint32_t    messageID = 0x555;                  
+    uint8_t     message[] = {0,1,2,3,4,5,6,7};      
+    uint8_t     DLC = 8;                  
+
+    if (CAN2_MessageTransmit(messageID, DLC, message, 0, CAN_MSG_TX_DATA_FRAME)){
+        printf("CAN2 TX Msg: ID = 0x%03X, Length = %d, [",messageID, DLC);
+        for (i = 0; i < DLC; i++)
+            printf(" %02X", message[i]);
+        printf(" ]\r\n");
+    } else {
+        printf("CAN2 Error Transmit Failed\r\n");
+    }
 }

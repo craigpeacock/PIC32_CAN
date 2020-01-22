@@ -88,7 +88,7 @@
 #pragma config FUSBIDIO =   ON
 #pragma config FMIIEN =     OFF
 #pragma config FETHIO =     OFF
-#pragma config FCANIO =     OFF
+#pragma config FCANIO =     ON
 
 
 
@@ -154,6 +154,8 @@ void SYS_Initialize ( void* data )
 
 
 	UART3_Initialize();
+
+    CAN2_Initialize();
 
 
 

@@ -19,8 +19,8 @@
           <Name dnOrder="1">initialization.c</Name>
           <LogicalPath dnOrder="2">config/default/</LogicalPath>
           <PhysicalPath dnOrder="3">/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">C8E34874B40A63F21FD6C511DF555962</GeneratedChecksum>
-          <UserChecksum dnOrder="5">C8E34874B40A63F21FD6C511DF555962</UserChecksum>
+          <GeneratedChecksum dnOrder="4">5336221D0E2DB908FC4BB542906EABD2</GeneratedChecksum>
+          <UserChecksum dnOrder="5">5336221D0E2DB908FC4BB542906EABD2</UserChecksum>
         </File>
         <File dnOrder="2">
           <Type dnOrder="0">SOURCE</Type>
@@ -35,10 +35,18 @@
           <Name dnOrder="1">main.c</Name>
           <LogicalPath dnOrder="2"/>
           <PhysicalPath dnOrder="3">/../../</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">F81A00E640818EDFB9E79C9BD241AEF4</GeneratedChecksum>
-          <UserChecksum dnOrder="5">F81A00E640818EDFB9E79C9BD241AEF4</UserChecksum>
+          <GeneratedChecksum dnOrder="4"/>
+          <UserChecksum dnOrder="5"/>
         </File>
         <File dnOrder="4">
+          <Type dnOrder="0">SOURCE</Type>
+          <Name dnOrder="1">plib_can2.c</Name>
+          <LogicalPath dnOrder="2">config/default/peripheral/can/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/can/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">5A07096D810336F6B03402DAF91396A6</GeneratedChecksum>
+          <UserChecksum dnOrder="5">5A07096D810336F6B03402DAF91396A6</UserChecksum>
+        </File>
+        <File dnOrder="5">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_clk.c</Name>
           <LogicalPath dnOrder="2">config/default/peripheral/clk/</LogicalPath>
@@ -46,7 +54,7 @@
           <GeneratedChecksum dnOrder="4">9854678C3A3E4E9544EC7450ACBAE52A</GeneratedChecksum>
           <UserChecksum dnOrder="5">9854678C3A3E4E9544EC7450ACBAE52A</UserChecksum>
         </File>
-        <File dnOrder="5">
+        <File dnOrder="6">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_evic.c</Name>
           <LogicalPath dnOrder="2">config/default/peripheral/evic/</LogicalPath>
@@ -54,7 +62,7 @@
           <GeneratedChecksum dnOrder="4">87D7D0431653F742C8D307020789979B</GeneratedChecksum>
           <UserChecksum dnOrder="5">87D7D0431653F742C8D307020789979B</UserChecksum>
         </File>
-        <File dnOrder="6">
+        <File dnOrder="7">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_gpio.c</Name>
           <LogicalPath dnOrder="2">config/default/peripheral/gpio/</LogicalPath>
@@ -62,7 +70,7 @@
           <GeneratedChecksum dnOrder="4">57C8603AF0A50F8F39F246233048D30A</GeneratedChecksum>
           <UserChecksum dnOrder="5">57C8603AF0A50F8F39F246233048D30A</UserChecksum>
         </File>
-        <File dnOrder="7">
+        <File dnOrder="8">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">plib_uart3.c</Name>
           <LogicalPath dnOrder="2">config/default/peripheral/uart/</LogicalPath>
@@ -70,7 +78,7 @@
           <GeneratedChecksum dnOrder="4">A14B5080E9794269BE1043D86891617C</GeneratedChecksum>
           <UserChecksum dnOrder="5">A14B5080E9794269BE1043D86891617C</UserChecksum>
         </File>
-        <File dnOrder="8">
+        <File dnOrder="9">
           <Type dnOrder="0">SOURCE</Type>
           <Name dnOrder="1">xc32_monitor.c</Name>
           <LogicalPath dnOrder="2">config/default/stdio/</LogicalPath>
@@ -78,15 +86,15 @@
           <GeneratedChecksum dnOrder="4">199B5B81777999B213F4EB5C4CE9FC78</GeneratedChecksum>
           <UserChecksum dnOrder="5">199B5B81777999B213F4EB5C4CE9FC78</UserChecksum>
         </File>
-        <File dnOrder="9">
+        <File dnOrder="10">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">definitions.h</Name>
           <LogicalPath dnOrder="2">config/default/</LogicalPath>
           <PhysicalPath dnOrder="3">/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">2244D5AFEF334D1F05043C97E030074A</GeneratedChecksum>
-          <UserChecksum dnOrder="5">2244D5AFEF334D1F05043C97E030074A</UserChecksum>
+          <GeneratedChecksum dnOrder="4">B507FCF2F1189F5B68E9537FD93BBEEE</GeneratedChecksum>
+          <UserChecksum dnOrder="5">B507FCF2F1189F5B68E9537FD93BBEEE</UserChecksum>
         </File>
-        <File dnOrder="10">
+        <File dnOrder="11">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">device.h</Name>
           <LogicalPath dnOrder="2">packs/PIC32MX795F512L_DFP/</LogicalPath>
@@ -94,7 +102,23 @@
           <GeneratedChecksum dnOrder="4">5D5C52527AB1435153DB9B50ADE6B79D</GeneratedChecksum>
           <UserChecksum dnOrder="5">5D5C52527AB1435153DB9B50ADE6B79D</UserChecksum>
         </File>
-        <File dnOrder="11">
+        <File dnOrder="12">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">plib_can2.h</Name>
+          <LogicalPath dnOrder="2">config/default/peripheral/can/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/can/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">9CDE7383F9A46CAE0F9CEBACA783BB10</GeneratedChecksum>
+          <UserChecksum dnOrder="5">9CDE7383F9A46CAE0F9CEBACA783BB10</UserChecksum>
+        </File>
+        <File dnOrder="13">
+          <Type dnOrder="0">HEADER</Type>
+          <Name dnOrder="1">plib_can_common.h</Name>
+          <LogicalPath dnOrder="2">config/default/peripheral/can/</LogicalPath>
+          <PhysicalPath dnOrder="3">/peripheral/can/</PhysicalPath>
+          <GeneratedChecksum dnOrder="4">F75024D635BC49D288EF4E2728BAAC18</GeneratedChecksum>
+          <UserChecksum dnOrder="5">F75024D635BC49D288EF4E2728BAAC18</UserChecksum>
+        </File>
+        <File dnOrder="14">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_clk.h</Name>
           <LogicalPath dnOrder="2">config/default/peripheral/clk/</LogicalPath>
@@ -102,7 +126,7 @@
           <GeneratedChecksum dnOrder="4">7066CC390335CF75126E2A50C46E3BDD</GeneratedChecksum>
           <UserChecksum dnOrder="5">7066CC390335CF75126E2A50C46E3BDD</UserChecksum>
         </File>
-        <File dnOrder="12">
+        <File dnOrder="15">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_evic.h</Name>
           <LogicalPath dnOrder="2">config/default/peripheral/evic/</LogicalPath>
@@ -110,7 +134,7 @@
           <GeneratedChecksum dnOrder="4">1BA4A111238723BF8148CF1BC7442A3C</GeneratedChecksum>
           <UserChecksum dnOrder="5">1BA4A111238723BF8148CF1BC7442A3C</UserChecksum>
         </File>
-        <File dnOrder="13">
+        <File dnOrder="16">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_gpio.h</Name>
           <LogicalPath dnOrder="2">config/default/peripheral/gpio/</LogicalPath>
@@ -118,7 +142,7 @@
           <GeneratedChecksum dnOrder="4">98456524B2FA9B9E8E058B3D2DAA1E85</GeneratedChecksum>
           <UserChecksum dnOrder="5">98456524B2FA9B9E8E058B3D2DAA1E85</UserChecksum>
         </File>
-        <File dnOrder="14">
+        <File dnOrder="17">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_uart3.h</Name>
           <LogicalPath dnOrder="2">config/default/peripheral/uart/</LogicalPath>
@@ -126,7 +150,7 @@
           <GeneratedChecksum dnOrder="4">C544EB3EF9F6E009980112688465FA0B</GeneratedChecksum>
           <UserChecksum dnOrder="5">C544EB3EF9F6E009980112688465FA0B</UserChecksum>
         </File>
-        <File dnOrder="15">
+        <File dnOrder="18">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">plib_uart_common.h</Name>
           <LogicalPath dnOrder="2">config/default/peripheral/uart/</LogicalPath>
@@ -134,7 +158,7 @@
           <GeneratedChecksum dnOrder="4">A5B40F859F555A11C166EBEE10E8B5CD</GeneratedChecksum>
           <UserChecksum dnOrder="5">A5B40F859F555A11C166EBEE10E8B5CD</UserChecksum>
         </File>
-        <File dnOrder="16">
+        <File dnOrder="19">
           <Type dnOrder="0">HEADER</Type>
           <Name dnOrder="1">toolchain_specifics.h</Name>
           <LogicalPath dnOrder="2">config/default/</LogicalPath>

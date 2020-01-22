@@ -24,9 +24,12 @@
 #define S3          PORTCbits.RC3
 
 void CAN2_Transmit_Test(void);
+void CAN2_Receive_Test(void);
 
 int main ( void )
 {
+    uint32_t status = 0;
+    
     LED1_DIR = 0;
     LED2_DIR = 0;
     LED3_DIR = 0;
@@ -50,6 +53,13 @@ int main ( void )
             LED1 = 0;
         }  
         
+        if (CAN2_InterruptGet(1, CAN_FIFO_INTERRUPT_RXNEMPTYIF_MASK)){
+            status = CAN2_ErrorGet();
+            if (status == CAN_ERROR_NONE) {
+                CAN2_Receive_Test();
+            }
+        }
+        
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
     }
@@ -72,5 +82,22 @@ void CAN2_Transmit_Test(void)
         printf(" ]\r\n");
     } else {
         printf("CAN2 Error Transmit Failed\r\n");
+    }
+}
+
+void CAN2_Receive_Test(void)
+{
+    uint8_t     i;
+    uint32_t    messageID;
+    uint8_t     message[8];
+    uint8_t     DLC;
+  
+    if (CAN2_MessageReceive(&messageID, &DLC, message, 0, 1)) {
+        printf("CAN2 RX Msg: ID = 0x%03X, Length = %d, [",messageID, DLC);
+        for (i = 0; i < DLC; i++)
+            printf(" %02X", message[i]);
+        printf(" ]\r\n");
+    } else {
+        printf("Error Received Failed\r\n");
     }
 }
